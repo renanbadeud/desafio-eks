@@ -8,7 +8,7 @@ Dentro do repositorio, execute:
 
     terraform apply
 
-Em seguida,configure o kubectl para interagir com o cluster:
+Em seguida, configure o kubectl para interagir com o cluster:
 
     aws eks --region $(terraform output -raw region) update-kubeconfig --name $(terraform output -raw cluster_name)
 
